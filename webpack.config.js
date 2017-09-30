@@ -32,19 +32,19 @@ const config = {
             {
                 test: /\.ts$/,
                 include: [BROWSER_SOURCE_PATH, SHARED_SOURCE_PATH],
-                loader: 'ts-loader',
+                loader: 'awesome-typescript-loader',
                 options: {
                     instance: 'browser',
-                    configFile: path.join(BROWSER_SOURCE_PATH, 'tsconfig.json'),
+                    configFileName: path.join(BROWSER_SOURCE_PATH, 'tsconfig.json'),
                 },
             },
             {
                 test: /\.ts$/,
                 include: [SERVICE_WORKER_SOURCE_PATH, SHARED_SOURCE_PATH],
-                loader: 'ts-loader',
+                loader: 'awesome-typescript-loader',
                 options: {
                     instance: 'service-worker',
-                    configFile: path.join(SERVICE_WORKER_SOURCE_PATH, 'tsconfig.json'),
+                    configFileName: path.join(SERVICE_WORKER_SOURCE_PATH, 'tsconfig.json'),
                 },
             },
         ],
