@@ -31,7 +31,7 @@ const config = {
         rules: [
             {
                 test: /\.ts$/,
-                include: [BROWSER_SOURCE_PATH, SHARED_SOURCE_PATH],
+                include: [BROWSER_SOURCE_PATH],
                 loader: 'awesome-typescript-loader',
                 options: {
                     instance: 'browser',
@@ -40,7 +40,7 @@ const config = {
             },
             {
                 test: /\.ts$/,
-                include: [SERVICE_WORKER_SOURCE_PATH, SHARED_SOURCE_PATH],
+                include: [SERVICE_WORKER_SOURCE_PATH],
                 loader: 'awesome-typescript-loader',
                 options: {
                     instance: 'service-worker',
